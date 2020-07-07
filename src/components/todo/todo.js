@@ -28,7 +28,9 @@ class ToDo extends React.Component {
       item.complete = !item.complete;
       let list = this.state.list.map(listItem => listItem._id === item._id ? item : listItem);
       this.setState({list});
+      
     }
+
 
   };
   togglehandleDelete = id => {
