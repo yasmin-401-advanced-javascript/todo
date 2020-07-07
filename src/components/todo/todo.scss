@@ -4,17 +4,20 @@ body, html {
     padding:0;
     width: 100%;
 }
+.navBar {
+    background-color: #343a40;
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+}
 .todo-details {
     display:flex;
     flex-direction:column;
 
-    header {
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        padding:.5em 1em;
-    }
 
+
+    
     .item {
         flex:1;
         padding: 1em;

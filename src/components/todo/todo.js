@@ -1,7 +1,8 @@
 import React from 'react';
 import TodoForm from './form.js';
 import TodoList from './list.js';
-
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar'; 
 import './todo.scss';
 
 class ToDo extends React.Component {
@@ -46,11 +47,16 @@ class ToDo extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <h2>
-          There are {this.state.list.filter(item => !item.complete).length} Items To Complete
-          </h2>
-        </header>
+
+        <Navbar bg="dark" variant="dark" className="navBar">
+               <Nav className="mr-auto">
+                    <h2>
+                          To Do list Manager ({this.state.list.filter(item => !item.complete).length})
+                    </h2>
+               </Nav>
+         </Navbar>
+         
+
 
         <section className="todo">
 
