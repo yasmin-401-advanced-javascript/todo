@@ -1,5 +1,5 @@
 .delete {
-    margin-left: 46%;
+    margin-left: 40%;
 }
 .card-header{
     width: 100%;
@@ -8,8 +8,13 @@
 .card-text{
     height: 70px;
     padding: 5%;
+    display: grid;
 }
 .card{
     margin-bottom: 7%;
     border: 1px solid gray;
+}
+
+.dif{
+    margin-left: auto;
 }

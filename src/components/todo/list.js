@@ -14,12 +14,13 @@ function TodoList (props){
                 key={item._id} className="card"
               >
                 <Card.Header>
-                <Badge variant="success">Pending</Badge>
+                <Badge variant="success">{item.complete ? 'completed' : 'pending'}</Badge>
                 {' '}{item.complete}  {item.assignee}
                 <Button variant="light" className='delete' onClick={() => props.handleDelete(item._id)}>
                 X</Button></Card.Header>
                 <Card.Text onClick={() => props.handleComplete(item._id)} >
-                  {item.text}  {item.difficulty }
+                <span className="text">  {item.text} </span>
+                  <span className="dif"> difficulty: {item.difficulty }</span>
                 </Card.Text>
                 
                
