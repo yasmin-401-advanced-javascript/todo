@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/yasmin-401-advanced-javascript/todo/issues"
   },
-  "homepage": "/",
+  "homepage": "https://yasmin-401-advanced-javascript.github.io/todo/",
   "browserslist": {
     "production": [
       ">0.2%",
