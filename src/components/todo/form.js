@@ -2,24 +2,31 @@ import React, { useState } from 'react';
 import './form.scss';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-function TodoForm(props){
-  const [item,setItem] = useState({});
+import useForm from '../hook/form-hook.js'
+// function TodoForm(props){
+//   const [item,setItem] = useState({});
 
-  const handleInputChange = e => {
-      setItem( {...item, [e.target.name]: e.target.value  });
+//   const handleInputChange = e => {
+//       setItem( {...item, [e.target.name]: e.target.value  });
       
-  };
+//   };
 
-  const  handleSubmit = (e) => {
-    e.preventDefault();
-    e.target.reset();
-    props.handleSubmit(item);
-    // const item1 = {};
-    setItem({});
-  };
+//   const  handleSubmit = (e) => {
+//     e.preventDefault();
+//     e.target.reset();
+//     props.handleSubmit(item);
+//     // const item1 = {};
+//     setItem({});
+//   };
+function TodoForm(props){
+  // const [item,setItem] = useState({});
+  const [item, handleInputChange, handleSubmit] = useForm(handleForm);
+  function handleForm(item) {
+    props.handleSubmit(item)
+  }
     return (
       <>
-      <div>
+      <div className="form">
         <h3>Add Item</h3>
 
         <Form onSubmit={handleSubmit}>

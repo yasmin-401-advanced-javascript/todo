@@ -31,7 +31,11 @@ class ToDo extends React.Component {
     }
 
   };
-
+  togglehandleDelete = id => {
+    let idx = this.state.list.findIndex(i => i._id === id);
+    let list = this.state.list.splice(idx, 1);
+    this.setState([...list]);
+  };
   componentDidMount() {
     let list = [
       { _id: 1, complete: false, text: 'Clean the Kitchen', difficulty: 3, assignee: 'Person A'},
@@ -60,7 +64,7 @@ class ToDo extends React.Component {
 
         <section className="todo">
 
-          <div>
+          <div className="form">
             <TodoForm handleSubmit={this.addItem} />
           </div>
 
@@ -68,6 +72,7 @@ class ToDo extends React.Component {
             <TodoList
               list={this.state.list}
               handleComplete={this.toggleComplete}
+              handleDelete={this.togglehandleDelete}
             />
           </div>
         </section>
