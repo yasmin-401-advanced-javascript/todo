@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './app.js';
-import Header from './components/todo/header.js';
+import Header from './components/todo/header/header.js';
 class Main extends React.Component {
   render() {
     return(

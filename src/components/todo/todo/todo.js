@@ -1,6 +1,6 @@
 import React from 'react';
-import TodoForm from './form.js';
-import TodoList from './list.js';
+import TodoForm from '../form/form.js';
+import TodoList from '../list/list.js';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'; 
 import './todo.scss';
