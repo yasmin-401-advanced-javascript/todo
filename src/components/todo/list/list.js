@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 import './list.scss';
 function TodoList (props){
+  console.log(props.list , 'list')
   return (
   
     <ListGroup>
@@ -15,8 +16,8 @@ function TodoList (props){
               >
                 <Card.Header>
                   <div className="header">
-                <Badge variant="success" className={`status-${item.complete}`}>{item.complete ? 'completed' : 'pending'}</Badge>
-                {' '}{item.complete}  {item.assignee}
+                <Badge variant="success" className={`status-${item.complete}`}>{item.complete}</Badge>
+                {' '} {item.assignee}
                 </div>
                 <Button variant="light" className='delete' onClick={() => props.handleDelete(item._id)}>
                 X</Button></Card.Header>
