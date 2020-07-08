@@ -14,7 +14,7 @@ function TodoList (props){
                 key={item._id} className="card"
               >
                 <Card.Header>
-                <Badge variant="success">{item.complete ? 'completed' : 'pending'}</Badge>
+                <Badge variant="success" className={`status-${item.complete}`}>{item.complete ? 'completed' : 'pending'}</Badge>
                 {' '}{item.complete}  {item.assignee}
                 <Button variant="light" className='delete' onClick={() => props.handleDelete(item._id)}>
                 X</Button></Card.Header>
