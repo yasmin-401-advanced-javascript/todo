@@ -4,6 +4,8 @@
 .card-header{
     width: 100%;
     margin-left: 0;
+    display: flex;
+    padding: 2% 0 2% 0;
 }
 .card-text{
     height: 70px;
@@ -21,4 +23,11 @@
 }
 .status-true{
     background-color:red;
+}
+.header{
+    padding-top: 10px;
+
+}
+.click-true{
+    text-decoration: line-through;
 }
