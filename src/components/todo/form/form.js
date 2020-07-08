@@ -44,7 +44,7 @@ function TodoForm(props){
 
   <Form.Group controlId="formBasicRange">
     <Form.Label>Range</Form.Label>
-    <Form.Control type="range" min="1" max="5" name="difficulty" onChange={handleInputChange} />
+    <Form.Control type="range" defaultValue="1" min="1" max="5" name="difficulty" onChange={handleInputChange} />
   </Form.Group>
 
   <Button variant="primary" type="submit" className="button">
