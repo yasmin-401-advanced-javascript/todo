@@ -1,0 +1,33 @@
+.delete {
+    margin-left: 40%;
+}
+.card-header{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    padding: 2% 0 2% 0;
+}
+.card-text{
+    height: 70px;
+    padding: 5%;
+    display: grid;
+}
+.card{
+    margin-bottom: 7%;
+    border: 1px solid gray;
+    box-shadow: 0 0  #585858, 0 0  #585858, 0 0 10px #585858;
+}
+
+.dif{
+    margin-left: auto;
+}
+.status-complete{
+    background-color:red;
+}
+.header{
+    padding-top: 10px;
+
+}
+.click-complete{
+    text-decoration: line-through;
+}
