@@ -9,7 +9,6 @@ To Do List app using react
 
 ### Documentation
 - [Submission PR](https://github.com/yasmin-401-advanced-javascript/todo/pull/2)
-- [GitHub Pages](https://yasmin-401-advanced-javascript.github.io/todo/)
 - [Netlify](https://hooks-custom-todo.netlify.app/)
 ## Library Used
 
